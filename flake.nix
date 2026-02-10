@@ -16,12 +16,16 @@
           modules = [
             {
               config.vim = {
+                viAlias = true;
+                vimAlias = true;
+
                 theme = {
                   enable = true;
                   name = "catppuccin";
                   style = "mocha";
                 };
                 autopairs.nvim-autopairs.enable = true;
+                comments.comment-nvim.enable = true;
 
                 options = {
                   tabstop = 2;
@@ -89,20 +93,54 @@
                   enableFormat = true;
                   enableTreesitter = true;
 
-                  nix.enable = true;
-                  csharp.enable = true;
+                  assembly.enable = true;
+                  astro.enable = true;
                   bash.enable = true;
-                  java.enable = true;
-                  html.enable = true;
-                  css.enable = true;
-                  rust.enable = true;
-                  markdown.enable = true;
                   clang.enable = true;
+                  clojure.enable = true;
+                  csharp.enable = true;
+                  css.enable = true;
+                  cue.enable = true;
+                  dart.enable = true;
+                  elixir.enable = true;
+                  fsharp.enable = true;
+                  gleam.enable = true;
                   go.enable = true;
+                  hcl.enable = true;
+                  helm.enable = true;
+                  julia.enable = true;
+                  kotlin.enable = true;
+                  lua.enable = true;
+                  markdown.enable = true;
+                  nim.enable = true;
+                  nix.enable = true;
+                  nu.enable = true;
+                  ocaml.enable = true;
+                  odin.enable = true;
+                  php.enable = true;
+                  r.enable = true;
+                  ruby.enable = true;
+                  rust.enable = true;
+                  scala.enable = true;
+                  sql.enable = true;
+                  svelte.enable = true;
+                  tailwind.enable = true;
+                  terraform.enable = true;
                   ts.enable = true;
+                  typst.enable = true;
+                  vala.enable = true;
+                  wgsl.enable = true;
+                  yaml.enable = true;
+                  zig.enable = false;
+
                   python = {
                     enable = true;
                     lsp.servers = ["pyright"];
+                  };
+
+                  html = {
+                    enable = true;
+                    lsp.servers = ["emmet-ls"];
                   };
                 };
 
